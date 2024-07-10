@@ -6,6 +6,8 @@ import java.util.Scanner;
  * Cache Miss : 23167 -> 52316
  * Cache Hit : 52316 -> 35216
  */
+//5 9
+//1 2 3 2 6 2 3 5 7
 public class LeastRecentlyUsed {
 
     public int[] solution(int size, int n, int[] arr) {
