@@ -23,7 +23,6 @@ public class ContinuousSubsequence2 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         ContinuousSubsequence2 T = new ContinuousSubsequence2();
         Scanner sc = new Scanner(System.in);
@@ -37,3 +36,5 @@ public class ContinuousSubsequence2 {
     }
 
 }
+// 14 2
+// 1 1 0 0 1 1 0 1 1 0 1 1 0 1
