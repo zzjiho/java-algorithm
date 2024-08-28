@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 //이분검색(암기)
 public class BinarySearch {
-
     public int solution(int n, int m, int[] arr) {
         int answer = 0;
-        Arrays.sort(arr);
+        Arrays.sort(arr); // 이분검색은 정렬되어 있는 상황에서만 통한다.
         int lt = 0, rt = n-1;
         while (lt <= rt) {
             int mid = (lt + rt) / 2;
@@ -35,6 +34,5 @@ public class BinarySearch {
         System.out.println(T.solution(n, m, arr));
     }
 }
-
-//8 32
-//23 87 65 12 57 32 99 81
+// 8 32
+// 23 87 65 12 57 32 99 81
