@@ -44,7 +44,6 @@ public class FindCommonElements {
         for (int x : T.solution(n, m, ar1, ar2)) {
             System.out.print(x + " ");
         }
-
     }
 
 }
