@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-//등수 구하기
+// 등수 구하기
 public class FindTheRatio {
 
     // 점수값 배열
@@ -13,14 +13,13 @@ public class FindTheRatio {
         int[] answer = new int[n];
         for (int i = 0; i < n; i++) {
             int cnt = 1;
-            for (int j = 0; j < i; j++) {
-                if (arr[i] > arr[j]) {
+            for (int j = 0; j < n; j++) {
+                if (arr[j] > arr[i]) {
                     cnt++;
                 }
             }
             answer[i] = cnt;
         }
-
         return answer;
     }
 
@@ -33,9 +32,8 @@ public class FindTheRatio {
             arr[i] = sc.nextInt();
         }
         for (int x : T.solution(n, arr)) {
-            System.out.println(x+" ");
+            System.out.print(x + " ");
         }
-
     }
 }
 //5
