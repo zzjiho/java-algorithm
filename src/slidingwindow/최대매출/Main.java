@@ -1,9 +1,8 @@
-package slidingwindow;
+package slidingwindow.최대매출;
 
 import java.util.Scanner;
 
-// 최대매출 (슬라이딩 윈도우)
-public class MaximumSales {
+public class Main {
 
     public int solution(int n, int k, int[] ar) {
         int answer, sum = 0;
@@ -23,7 +22,7 @@ public class MaximumSales {
 
 
     public static void main(String[] args) {
-        MaximumSales T = new MaximumSales();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();

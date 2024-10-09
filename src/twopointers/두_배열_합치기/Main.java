@@ -1,10 +1,9 @@
-package array;
+package twopointers.두_배열_합치기;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// 두 배열 합치기
-public class CombineTwoArrays {
+public class Main {
     public ArrayList<Integer> solution(int n, int m, int[] a, int[] b) {
         ArrayList<Integer> answer = new ArrayList<>();
         int p1 = 0, p2 = 0; // 포인터
@@ -25,7 +24,7 @@ public class CombineTwoArrays {
     }
 
     public static void main(String[] args) {
-        CombineTwoArrays T = new CombineTwoArrays();
+        Main T = new Main();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int[] a = new int[n];

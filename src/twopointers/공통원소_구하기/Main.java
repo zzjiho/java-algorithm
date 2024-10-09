@@ -1,10 +1,10 @@
-package twopointers;
+package twopointers.공통원소_구하기;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class FindCommonElements {
+public class Main {
     public ArrayList<Integer> solution(int n, int m, int[] ar1, int[] ar2) {
         ArrayList<Integer> answer = new ArrayList<>();
 
@@ -27,7 +27,7 @@ public class FindCommonElements {
     }
 
     public static void main(String[] args) {
-        FindCommonElements T = new FindCommonElements();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] ar1 = new int[n];
@@ -47,3 +47,7 @@ public class FindCommonElements {
     }
 
 }
+// 5
+// 1 3 9 5 2
+// 5
+// 3 2 5 7 8

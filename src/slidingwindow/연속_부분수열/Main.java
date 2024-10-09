@@ -1,9 +1,7 @@
-package slidingwindow;
-
+package slidingwindow.연속_부분수열;
 import java.util.Scanner;
-// 연속된 부분수열
-public class ContinuousSubsequence {
 
+public class Main {
     public int solution(int n, int m, int[] ar) {
         int answer=0,  lt=0, sum = 0;
 
@@ -23,7 +21,7 @@ public class ContinuousSubsequence {
     }
 
     public static void main(String[] args) {
-        ContinuousSubsequence T = new ContinuousSubsequence();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
