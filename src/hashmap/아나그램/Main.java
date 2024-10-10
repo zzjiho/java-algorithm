@@ -1,10 +1,9 @@
-package hashmap;
+package hashmap.아나그램;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-// 아나그램(해쉬)
-public class Anagram {
+public class Main {
 
     public String solution(String a, String b) {
         String answer = "YES";
@@ -24,7 +23,7 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        Anagram T = new Anagram();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         String b = sc.next();
