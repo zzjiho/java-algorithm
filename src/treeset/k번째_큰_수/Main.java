@@ -1,11 +1,10 @@
-package treeset;
+package treeset.k번째_큰_수;
 
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-// k번째 가장 큰 수 구하기
-public class KthLargestNumber {
+public class Main {
 
     public int solution(int[] ar, int n, int k) {
         int answer = -1;
@@ -29,7 +28,7 @@ public class KthLargestNumber {
     }
 
     public static void main(String[] args) {
-        KthLargestNumber T = new KthLargestNumber();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int k = sc.nextInt();
