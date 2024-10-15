@@ -1,11 +1,9 @@
-package ds.stackqueue;
+package ds.stackqueue.쇠막대기;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-//쇠막대기
-public class IronBar {
-
+public class Main {
     public int solution(String str) {
         int answer = 0;
         Stack<Character> stack = new Stack<>();
@@ -25,12 +23,10 @@ public class IronBar {
     }
 
     public static void main(String[] args) {
-        IronBar T = new IronBar();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));
     }
-
-
-
 }
+// ()(((()())(())()))(())
