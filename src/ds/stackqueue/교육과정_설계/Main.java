@@ -1,11 +1,10 @@
-package ds.stackqueue;
+package ds.stackqueue.교육과정_설계;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-//교육과정 설계
-public class CurriculumDesign {
+public class Main {
 
     public String solution(String need, String plan) {
         String answer = "YES";
@@ -32,7 +31,7 @@ public class CurriculumDesign {
     }
 
     public static void main(String[] args) {
-        CurriculumDesign T = new CurriculumDesign();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         String b = sc.next();

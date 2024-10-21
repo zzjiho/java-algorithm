@@ -1,41 +1,39 @@
-package ds.stackqueue;
+package ds.stackqueue.응급실;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-
 class Person {
     int id;
     int priority;
+
     public Person(int id, int priority) {
         this.id = id;
         this.priority = priority;
     }
 }
 
-//응급실
-public class EmergencyRoom {
-    public int solution(int n, int m, int[] arr) {
+public class Main {
+    public int solution(int n, int m, int[] ar) {
         int answer = 0;
         Queue<Person> Q = new LinkedList<>();
 
         for (int i = 0; i < n; i++) {
-            Q.offer(new Person(i, arr[i]));
+            Q.offer(new Person(i, ar[i]));
         }
 
         while (!Q.isEmpty()) {
             Person tmp = Q.poll();
             for (Person x : Q) {
-                // tmp 환자가 진료를 받을 수 있는지 ?
                 if (x.priority > tmp.priority) {
-                    Q.offer(tmp); // 못받으면 다시 맨 뒤로
+                    Q.offer(tmp);
                     tmp = null;
                     break;
                 }
             }
             if (tmp != null) {
-                answer ++;
+                answer++;
                 if (tmp.id == m) {
                     return answer;
                 }
@@ -45,16 +43,14 @@ public class EmergencyRoom {
     }
 
     public static void main(String[] args) {
-        EmergencyRoom T = new EmergencyRoom();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        int[] ar = new int[N];
+        for (int i = 0; i < N; i++) {
+            ar[i] = sc.nextInt();
         }
-        System.out.println(T.solution(n, m, arr));
+        System.out.println(T.solution(N, M, ar));
     }
 }
-// 5 2
-// 60 50 70 80 90
