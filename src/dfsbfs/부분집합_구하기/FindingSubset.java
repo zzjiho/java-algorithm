@@ -1,10 +1,11 @@
-package dfsbfs;
+package dfsbfs.부분집합_구하기;
 
 public class FindingSubset {
 
     static int n;
     static int[] ch;
 
+    // L : 원소값
     public void DFS(int L) { // 부분집합으로 사용하냐 안하냐
         if (L == n + 1) { // 부분집합 경우가 하나 만들어짐
             String tmp = "";

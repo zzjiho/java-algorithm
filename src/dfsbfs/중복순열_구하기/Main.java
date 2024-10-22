@@ -8,24 +8,21 @@ import java.util.Scanner;
 public class Main {
 
     static int[] pm;
-    static int n, m;
+    static int n, m; // n: 숫자, m:뽑을 개수
 
     public void DFS(int L) {
-        if (L==m) {
-            for (int x : pm) {
-                System.out.print(x + " ");
-            }
-            System.out.println();
-        } else { // DFS(1)의 모든 반복이 끝나면, 다시 22라인의 DFS(0)으로 돌아와서 for문을 돌아 i = 2로 증가한 상태에서 반복이 다시 시작
-            for (int i = 1; i <= n; i++) {
-                pm[L] = i;
-                DFS(L + 1);
-            }
-
+            if (L==m) {
+                for (int x : pm) {
+                    System.out.print(x + " ");
+                }
+                System.out.println();
+            } else { // DFS(1)의 모든 반복이 끝나면, 다시 22라인의 DFS(0)으로 돌아와서 for문을 돌아 i = 2로 증가한 상태에서 반복이 다시 시작
+                for (int i = 1; i <= n; i++) {
+                    pm[L] = i;
+                    DFS(L + 1);
+                }
         }
-
     }
-
 
     public static void main(String[] args){
         Main T = new Main();
@@ -36,6 +33,5 @@ public class Main {
         T.DFS(0);
     }
 }
-
 // 3 2
 

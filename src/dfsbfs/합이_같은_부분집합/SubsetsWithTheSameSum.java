@@ -1,4 +1,4 @@
-package dfsbfs;
+package dfsbfs.합이_같은_부분집합;
 
 import java.util.Scanner;
 
