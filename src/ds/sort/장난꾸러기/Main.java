@@ -1,25 +1,31 @@
-package ds.sort;
+package ds.sort.장난꾸러기;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Mischief {
+// 9
+// 120 125 152 130 135 135 143 127 160
 
-    public ArrayList<Integer> solution(int n, int[] arr) {
+// 120 125 127 130 135 135 143 152 160
+public class Main {
+
+    public ArrayList<Integer> solution(int n, int[] ar) {
+        int[] clone = ar.clone();
+        Arrays.sort(clone);
         ArrayList<Integer> answer = new ArrayList<>();
-        int[] tmp = arr.clone();
-        Arrays.sort(tmp);
+
         for (int i = 0; i < n; i++) {
-            if (arr[i] != tmp[i]) {
-                answer.add(i + 1);
+            if (ar[i] != clone[i]) {
+                answer.add(i+1);
             }
         }
+
         return answer;
     }
 
     public static void main(String[] args) {
-        Mischief T = new Mischief();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -27,6 +33,5 @@ public class Mischief {
         for (int x : T.solution(n,arr)) System.out.print(x+" ");
     }
 }
-
 //9
 //120 125 152 130 135 135 143 127 160

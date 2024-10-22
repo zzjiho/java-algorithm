@@ -1,4 +1,4 @@
-package ds.sort;
+package ds.sort.좌표정렬;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,7 +31,7 @@ class Point implements Comparable<Point> {
 }
 
 // 좌표 정렬을 수행하는 클래스
-public class CoordinateAlignment {
+public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -50,10 +50,9 @@ public class CoordinateAlignment {
         }
     }
 }
-
-//5
-//2 7
-//1 3
-//1 2
-//2 5
-//3 6
+// 5
+// 2 7
+// 1 3
+// 1 2
+// 2 5
+// 3 6

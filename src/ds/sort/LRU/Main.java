@@ -1,15 +1,16 @@
-package ds.sort;
+package ds.sort.LRU;
 
 import java.util.Scanner;
 
+// 5 9
+// 1 2 3 2 6 2 3 5 7
 /**
  * Cache Miss : 23167 -> 52316
  * Cache Hit : 52316 -> 35216
  */
-public class LeastRecentlyUsed {
-
+public class Main {
     public int[] solution(int size, int n, int[] arr) {
-        int[] cache = new int[size]; // int[5]
+        int[] cache = new int[size];
         for (int x : arr) {
             int pos = -1;
             for (int i = 0; i < size; i++) {
@@ -22,7 +23,7 @@ public class LeastRecentlyUsed {
                     cache[i] = cache[i - 1];
                 }
             } else { // 캐시히트 (x의 위치 pos부터 맨 앞까지의 항목들을 오른쪽으로 한 칸씩 이동시키고, 캐시의 맨 앞에 x를 삽입)
-                for (int i = pos; i >= 1; i--) { // 히트난 지점부터 땡기기
+                for (int i = pos; i >= 1; i--) { // 히트난 지점부터 뒤로 밀기
                     cache[i] = cache[i - 1];
                 }
             }
@@ -32,7 +33,7 @@ public class LeastRecentlyUsed {
     }
 
     public static void main(String[] args) {
-        LeastRecentlyUsed T = new LeastRecentlyUsed();
+        Main T = new Main();
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
         int n = sc.nextInt();
@@ -41,5 +42,4 @@ public class LeastRecentlyUsed {
         for (int x : T.solution(s, n, arr)) System.out.print(x + " ");
     }
 }
-// 5 9
-// 1 2 3 2 6 2 3 5 7
+
