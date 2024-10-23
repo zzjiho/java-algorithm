@@ -1,5 +1,7 @@
 ![img.png](img.png)
 
+![img_6.png](img_6.png)
+
 조합은 이런 그림이 나온다. (파스칼의 삼각형)
 
 5명중에서 3명을 뽑는다고 할때 딱 두가지로 분류를 할 수 있다.
@@ -17,3 +19,13 @@
 
 이런식으로 재귀를 이용해서 구현할 수 있다.
 
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
+
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
