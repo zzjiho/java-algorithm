@@ -1,4 +1,4 @@
-package slidingwindow.연속_부분수열;
+package twopointers.연속_부분수열;
 import java.util.Scanner;
 
 public class Main {

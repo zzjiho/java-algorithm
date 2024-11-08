@@ -14,7 +14,7 @@ public class Main {
         }
 
         for (char x : b.toCharArray()) {
-            if (!map.containsKey(x) || map.get(x) == 0) {
+            if (!map.containsKey(x) || map.get(x) == 0) { // A 가 true이면 B 는 실행X
                 return "NO";
             }
             map.put(x, map.get(x) - 1);

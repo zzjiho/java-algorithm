@@ -1,7 +1,8 @@
-package dfsbfs;
+package dfsbfs.이진수_출력_재귀;
 
-// 이진수 출력(재귀)
-public class BinaryOutput {
+import java.util.Scanner;
+
+public class Main {
 
     public void DFS(int n) {
         if (n == 0) {
@@ -13,11 +14,9 @@ public class BinaryOutput {
     }
 
     public static void main(String[] args) {
-        BinaryOutput T = new BinaryOutput();
-        T.DFS(11);
+        Main T = new Main();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        T.DFS(n);
     }
-
-
-
-
 }
