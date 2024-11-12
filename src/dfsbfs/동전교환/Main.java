@@ -10,8 +10,8 @@ public class Main {
 
     public void DFS(int L, int sum, Integer[] ar) {
         if (sum > m) return;
-        if (L >= answer) return;
-        if (sum == m) {
+        if (L >= answer) return; // 거슬러줄 금액에 도달하여 answer에 최소 동전 수가 들어가있기때문에, 탐색종료
+        if (sum == m) { // 거스름돈을 무조건 m 원 받아야 하기 때문에 기저조건을 이렇게 설정해도 된다.
             answer = Math.min(answer, L);
         } else {
             for (int i = 0; i < n; i++) {
