@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-class Point { // 좌표 쓰려고 만들어준다.
+class Point { // 좌표 쓰려고 만들어준다. (x, y) 좌표를 각각 관리하는 것보다 하나의 객체로 관리하면 코드가 간결해진다.
     public int x, y;
 
     Point(int x, int y) {
