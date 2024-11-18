@@ -35,9 +35,9 @@ public class Main {
             int now = tmp.vertex;
             int nowCost = tmp.cost;
             if (nowCost > dis[now]) {
-                continue;
+                continue; // 이미 더 짧은 경로로 방문한 노드이므로 넘어감
             }
-            for (Edge ob : graph.get(now)) {
+            for (Edge ob : graph.get(now)) { // 현재 최단거리 + 도착한 노드에서 갈 노드까지 최단거리
                 if (dis[ob.vertex] > nowCost + ob.cost) {
                     dis[ob.vertex] = nowCost + ob.cost; // 최단 거리 갱신
                     pQ.offer(new Edge(ob.vertex, nowCost + ob.cost));
@@ -74,7 +74,7 @@ public class Main {
     }
 }
 // 6 9
-// 1 2 12   // 1번 정점에서 2번정점으로 가는데 12의 비용이 든다.
+// 1 2 12
 // 1 3 4
 // 2 1 2
 // 2 3 5
@@ -83,10 +83,3 @@ public class Main {
 // 4 2 2
 // 4 5 5
 // 6 4 5
-
-
-
-
-
-
-
