@@ -9,4 +9,5 @@ combi(4, 2) = combi(3, 1) + combi(3, 2) 이렇게 된다.
 ![img.png](img.png)
 
 
+![img_3.png](img_3.png)
 
